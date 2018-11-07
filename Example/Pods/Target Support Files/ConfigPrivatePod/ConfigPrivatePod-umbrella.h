@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSArray+Json.h"
 
 FOUNDATION_EXPORT double ConfigPrivatePodVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConfigPrivatePodVersionString[];
