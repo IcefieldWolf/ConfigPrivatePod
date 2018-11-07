@@ -1,0 +1,6 @@
+framework module ConfigPrivatePod {
+  umbrella header "ConfigPrivatePod-umbrella.h"
+
+  export *
+  module * { export * }
+}
