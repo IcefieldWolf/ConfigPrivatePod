@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ConfigPrivatePod_Example' do
-  pod 'ConfigPrivatePod', :path => '../'
+  pod 'ConfigPrivatePod', '~>0.1.0'
 
   target 'ConfigPrivatePod_Tests' do
     inherit! :search_paths
