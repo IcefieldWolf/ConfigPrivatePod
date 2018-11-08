@@ -3,9 +3,5 @@ use_frameworks!
 target 'ConfigPrivatePod_Example' do
   pod 'ConfigPrivatePod', '~> 0.1.2'
 
-  target 'ConfigPrivatePod_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
+  
 end

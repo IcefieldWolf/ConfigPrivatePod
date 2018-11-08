@@ -21,7 +21,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		7A5BB9605977F25F554DB331 /* Pods_ConfigPrivatePod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85987C55575C706B3FE07C6D /* Pods_ConfigPrivatePod_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E9A73144F259BF2A62D2066 /* Pods_ConfigPrivatePod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F097ADD10FDE08F5F4671806 /* Pods_ConfigPrivatePod_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,9 +37,7 @@
 
 /* Begin PBXFileReference section */
 		29368C68AD34E9AF7F5FD10D /* Pods-ConfigPrivatePod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigPrivatePod_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConfigPrivatePod_Example/Pods-ConfigPrivatePod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2B1090D1A0954D5A22D811C5 /* Pods-ConfigPrivatePod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigPrivatePod_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConfigPrivatePod_Tests/Pods-ConfigPrivatePod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		497EE9A99CAC78EE983798B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		56E1F4C60C1F8E27D48C4254 /* Pods-ConfigPrivatePod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigPrivatePod_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConfigPrivatePod_Tests/Pods-ConfigPrivatePod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ConfigPrivatePod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfigPrivatePod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,7 +85,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				7A5BB9605977F25F554DB331 /* Pods_ConfigPrivatePod_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +186,6 @@
 			children = (
 				29368C68AD34E9AF7F5FD10D /* Pods-ConfigPrivatePod_Example.debug.xcconfig */,
 				9FDB95C39ACB4345ED8F2287 /* Pods-ConfigPrivatePod_Example.release.xcconfig */,
-				2B1090D1A0954D5A22D811C5 /* Pods-ConfigPrivatePod_Tests.debug.xcconfig */,
-				56E1F4C60C1F8E27D48C4254 /* Pods-ConfigPrivatePod_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -222,11 +216,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ConfigPrivatePod_Tests" */;
 			buildPhases = (
-				5C6F1E0B4D8635B8BAFA5A98 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				24BC28AE7D330C796E1851E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +240,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = IcefieldWolf;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P5FM4R89LW;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -295,28 +290,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24BC28AE7D330C796E1851E0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ConfigPrivatePod_Tests/Pods-ConfigPrivatePod_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConfigPrivatePod_Tests/Pods-ConfigPrivatePod_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4134E68DE4031284439E4479 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,7 +298,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ConfigPrivatePod_Example/Pods-ConfigPrivatePod_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ConfigPrivatePod_Example/Pods-ConfigPrivatePod_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ConfigPrivatePod/ConfigPrivatePod.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -336,29 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConfigPrivatePod_Example/Pods-ConfigPrivatePod_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C6F1E0B4D8635B8BAFA5A98 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ConfigPrivatePod_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConfigPrivatePod_Example/Pods-ConfigPrivatePod_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		92ACEE048FEF6F588FEC5493 /* [CP] Check Pods Manifest.lock */ = {
@@ -520,9 +471,11 @@
 			baseConfigurationReference = 29368C68AD34E9AF7F5FD10D /* Pods-ConfigPrivatePod_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5FM4R89LW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConfigPrivatePod/ConfigPrivatePod-Prefix.pch";
 				INFOPLIST_FILE = "ConfigPrivatePod/ConfigPrivatePod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,9 +488,11 @@
 			baseConfigurationReference = 9FDB95C39ACB4345ED8F2287 /* Pods-ConfigPrivatePod_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5FM4R89LW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConfigPrivatePod/ConfigPrivatePod-Prefix.pch";
 				INFOPLIST_FILE = "ConfigPrivatePod/ConfigPrivatePod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,7 +502,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B1090D1A0954D5A22D811C5 /* Pods-ConfigPrivatePod_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -571,7 +525,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56E1F4C60C1F8E27D48C4254 /* Pods-ConfigPrivatePod_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

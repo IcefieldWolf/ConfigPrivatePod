@@ -13,6 +13,7 @@
 #import "NSArray+Safe.h"
 #import "NSDictionary+Key.h"
 #import "NSArray+Json.h"
+#import "NSObject+Conversion.h"
 
 FOUNDATION_EXPORT double ConfigPrivatePodVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConfigPrivatePodVersionString[];
